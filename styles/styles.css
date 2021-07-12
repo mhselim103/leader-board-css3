@@ -85,10 +85,23 @@ Top Blogs styles
 /* --------
 courses style 
 --------- */
+.courses{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    grid-column-gap: 30px;
+}
+.course{
+    /* width: 253px; */
+    width: 100%;
+}
 
 .course-banner img {
     width: 224px;
 height: 104px;
+}
+.course-title{
+    font-size: 20px;
 }
 .course-author{
     color:#ED6B4F;
@@ -97,13 +110,25 @@ height: 104px;
 .course-info{
     color: #A2A2A2;
     display: flex;
-
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 18px;
+    margin-left: 0;
 }
 .fa-star.filled{
     color: #FFC014;
+    
+}
+.fa-star{
+    font-size: 12px;
 }
 .course-duration{
+    font-size: 12px;
     color: #FF4A60;
     background-color: #FEE5DF;
-    border-radius: 14.6913px;
+    border-radius: 15px;
 }
+
+/*------------
+ Media Querries
+------------- */
